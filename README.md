@@ -2,16 +2,7 @@
 Final Year Project of Cybersense: Chrome Extension for Real-Time Cyberbullying Detection
 
 If you wish to execute our code, please follow these instructions carefully:
-1. Please download these files:
-a. FYP Code (BERT).ipynb
-b. cyberbullying_tweets.csv
-c. cybersense.py
-d. manifest.json
-e. content.js
-f. popup.html
-g. popup.js
-h. styles.css
-i. background.js
+1. Please download these files: FYP Code (BERT).ipynb, cyberbullying_tweets.csv, cybersense.py, manifest.json, content.js, popup.html, popup.js, styles.css, background.js
 2. Save all the files in a single folder on your system.
 3. Run the “FYP Code (BERT).ipynb”. To save your device's storage, please run it in Google Colab and change the runtype to “T4 GPU” to allow faster execution. The process may take several hours to complete.
 4. After execution, a file named cyberbullying_model.pth will be created. If you are using Google Colab, download this file manually. Save the file in the same folder where you saved the other files.
