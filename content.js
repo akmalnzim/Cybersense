@@ -1,0 +1,1 @@
+// This file can be empty, but it's needed for the extension's content scripts to be available.

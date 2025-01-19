@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberSense</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Ensure the popup respects fixed dimensions */
+    html {
+      width: 300px;
+      height: 400px;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <!-- Main Popup Container -->
+  <div class="popup-container">
+    <!-- Header -->
+    <header class="popup-header">
+      <img src="logo.png" alt="Logo">
+      <h1>CyberSense</h1>
+      <button id="settings-btn" class="settings-icon">⚙️</button>
+    </header>
+
+    <!-- Main Content -->
+    <main class="popup-main">
+      <!-- Toggle Section -->
+      <div class="toggle-section">
+        <span>Activate</span>
+        <label class="switch">
+          <input type="checkbox" id="toggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <!-- Stats Section -->
+      <div class="stats-section">
+        <div class="stat">
+          <p class="stat-label">Words Scanned</p>
+          <p class="stat-value" id="words-scanned">0</p>
+        </div>
+        <div class="divider"></div>
+        <div class="stat">
+          <p class="stat-label">Sensitive Words</p>
+          <p class="stat-value" id="sensitive-words">0</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="popup-footer">
+      <p>CyberSense v1.0.0 | All Rights Reserved</p>
+    </footer>
+  </div>
+
+  <!-- Settings Container -->
+  <div class="settings-container" id="settings-container" style="display: none;">
+    <!-- Settings Header -->
+    <header class="settings-header">
+      <button id="back-btn" class="back-icon">←</button>
+      <h1>Settings</h1>
+    </header>
+
+    <!-- Main Settings Content -->
+    <main class="settings-main">
+      <!-- Option Section -->
+      <section class="settings-section">
+        <h2>Option</h2>
+        <div class="option-card">
+          <p>Select an action</p>
+          <div class="radio-group">
+            <label>
+              <input type="radio" name="action" value="blurred" checked> Blurred
+            </label>
+            <label>
+              <input type="radio" name="action" value="underlined"> Underlined
+            </label>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Settings Footer -->
+    <footer class="settings-footer">
+      <p>CyberSense v1.0.0 | All Rights Reserved</p>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
